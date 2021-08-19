@@ -1,0 +1,6 @@
+<app-add-tarefa (onAddTask)="addTask($event)"></app-add-tarefa>
+<app-tarefa-item 
+    *ngFor="let task of tasks" 
+    [task]="task"
+    (onToggleReminder)="toggleReminder(task)"
+></app-tarefa-item>
